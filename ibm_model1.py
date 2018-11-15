@@ -35,8 +35,8 @@ for i in range(0, iterations):
                 count[(e_word, f_word)] = count[(e_word, f_word)] + (t[(e_word, f_word)] / total_e[e_word])
                 total_f[f_word] = total_f[f_word] + (t[(e_word, f_word)] / total_e[e_word])
     word_pairs = list(t.keys())
-    for e_word in set(total_e):
-        for f_word in set(total_f):
+    for f_word in set(total_f):
+        for e_word in set(total_e):
             if (e_word, f_word) in word_pairs:
                 t[(e_word, f_word)] = count[(e_word, f_word)] / total_f[f_word]
 
