@@ -59,9 +59,9 @@ def IBM_Model_1(test_file):
                     final_e = e_word
                     temp = t[(e_word, f_word)]
             alignment.append((f_words.index(f_word) + 1, e_words.index(final_e) + 1))
-        bitext_alignment["Sentence " + str(bitext_num)] = alignment
+        bitext_alignment[languages[0] +": " + f_sentence + ", " + languages[1] +": " + e_sentence] = alignment
         bitext_num = bitext_num + 1
-        
+
     pprint(bitext_alignment)
 
 IBM_Model_1("data1.json")
