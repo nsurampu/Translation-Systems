@@ -4,6 +4,15 @@ from collections import defaultdict
 from pprint import pprint
 
 def IBM_Model_1(test_file):
+    '''
+
+    Takes a json file as argument and returns the predicted alignment of the phrases
+    withing the passed json documentself.
+
+    @type test_file: A json file
+
+    '''
+
     json_data_file = open(test_file, 'r')
     json_data = json.load(json_data_file)
     languages = list(json_data[0].keys())
@@ -64,4 +73,4 @@ def IBM_Model_1(test_file):
 
     pprint(bitext_alignment)
 
-IBM_Model_1("data1.json")
+# IBM_Model_1("data1.json")
