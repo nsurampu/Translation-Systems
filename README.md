@@ -1,4 +1,4 @@
-# Translation-Systems
+# Translation System
 
 This project implements the IBM Model 1, EM algorithm, IBM Model 2 and phrase based translation using Python3.
 
