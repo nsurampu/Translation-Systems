@@ -71,6 +71,9 @@ def IBM_Model_1(test_file):
         bitext_alignment[languages[0] +": " + f_sentence + ", " + languages[1] +": " + e_sentence] = alignment
         bitext_num = bitext_num + 1
 
+    print("\nJSON Data:")
+    pprint(json_data)
+    print("\nAlignments:")
     pprint(bitext_alignment)
 
-# IBM_Model_1("data1.json")
+IBM_Model_1("data1.json")
